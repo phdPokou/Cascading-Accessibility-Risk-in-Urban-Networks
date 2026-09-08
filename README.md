@@ -7,17 +7,34 @@
   <img src="https://img.shields.io/badge/CUDA-enabled-76B900?logo=nvidia&logoColor=white" alt="CUDA">
   <img src="https://img.shields.io/badge/Reproducibility-v1.1.0--B-2F6F9F" alt="Reproducibility">
   <img src="https://img.shields.io/badge/Study%20area-MEL%2C%20France-555555" alt="Study area">
+  <a href="https://doi.org/10.5281/zenodo.22660511">
+    <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.22660511.svg" alt="DOI">
+  </a>
 </p>
 
 This repository contains the public reproducibility pipeline for the paper:
 
 > **Cascading Accessibility Risk in Urban Networks: Graph Policy Learning for Resilient Public-Service Planning**
 
-The code implements the empirical workflow linking potential accessibility, disruption trajectories, sequential public restoration, and graph based policy learning for **Métropole Européenne de Lille (MEL), France**.
+The code implements the empirical workflow linking potential accessibility,
+disruption trajectories, sequential public restoration, and graph based policy
+learning for **Métropole Européenne de Lille (MEL), France**.
 
-The canonical public entry point is the `reproduce` stage. It checks or reconstructs the required public-data inputs, validates the frozen disruption design, trains the graph policies and controlled ablations, performs exact held-out evaluation, regenerates the publication source data, figures, and tables, and assembles a checksummed reproducibility bundle.
+### Reproducibility resources
 
----
+- **Source code and computational workflow:** this GitHub repository.
+- **Archived empirical and reproducibility data:** [Zenodo Dataset — DOI: 10.5281/zenodo.22660511](https://doi.org/10.5281/zenodo.22660511).
+
+The Zenodo archive contains the empirical and reproducibility data associated
+with the study, while this repository contains the computational pipeline used
+to construct the analysis, perform the statistical evaluation, and generate the
+reported tables and figures.
+
+The canonical public entry point is the `reproduce` stage. It checks or
+reconstructs the required public-data inputs, validates the frozen disruption
+design, trains the graph policies and controlled ablations, performs exact
+held-out evaluation, regenerates the publication source data, figures, and
+tables, and assembles a checksummed reproducibility bundle.
 
 ## 1. Repository scope
 
