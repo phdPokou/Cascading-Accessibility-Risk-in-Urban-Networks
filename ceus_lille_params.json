@@ -1,0 +1,245 @@
+{
+  "schema_version": "2026-08-29",
+  "script_version": "1.0.0",
+  "project": {
+    "name": "CEUS Lille Cascading Accessibility Risk",
+    "study_area": "Métropole Européenne de Lille, France",
+    "crs_metric": "EPSG:2154",
+    "crs_filosofi": "EPSG:3035",
+    "retrieval_date": "2026-08-29"
+  },
+  "compute": {
+    "prefer_cuda": true,
+    "cuda_device": 0,
+    "torch_float": "float32",
+    "deterministic_torch": false,
+    "cpu_workers": 4,
+    "windows_spawn": true,
+    "seeds": [
+      101,
+      202,
+      303,
+      404,
+      505,
+      606,
+      707,
+      808,
+      909,
+      1001,
+      1102,
+      1203,
+      1304,
+      1405,
+      1506,
+      1607,
+      1708,
+      1809,
+      1910,
+      2021
+    ]
+  },
+  "data": {
+    "overwrite_downloads": false,
+    "user_agent": "CEUS-Lille-Accessibility-Risk/1.0 research contact=local",
+    "datagouv_api": "https://www.data.gouv.fr/api/1",
+    "filosofi_dataset_slug": "revenus-pauvrete-et-niveau-de-vie-donnees-carroyees-2019-et-2021-dispositif-fichier-localise-social-et-fiscal-filosofi",
+    "filosofi_year": 2021,
+    "hazard_dataset_query": "Aléa débordement de cours d’eau TRI Lille",
+    "hazard_fallback_proxy": false,
+    "osm_network_type": "drive",
+    "osm_service_tags": {
+      "amenity": [
+        "hospital",
+        "clinic"
+      ],
+      "healthcare": [
+        "hospital",
+        "clinic",
+        "emergency_ward"
+      ]
+    },
+    "max_service_facilities": 40
+  },
+  "spatial": {
+    "population_column_candidates": [
+      "ind",
+      "Ind",
+      "population",
+      "Population",
+      "men",
+      "MEN"
+    ],
+    "income_column_candidates": [
+      "med21",
+      "MED21",
+      "med",
+      "MED",
+      "niveau_vie_median",
+      "revenu_median"
+    ],
+    "poverty_column_candidates": [
+      "tp60",
+      "TP60",
+      "taux_pauvrete",
+      "poverty_rate"
+    ],
+    "vulnerability_rule": "bottom_income_quartile",
+    "vulnerable_quantile": 0.25,
+    "aggregate_cells_to_snapped_node": true,
+    "min_population": 1.0,
+    "max_model_zones": 1800,
+    "zone_reduction": "population_weighted_stratified",
+    "service_supply": "unit",
+    "snap_max_m": 3000.0
+  },
+  "network": {
+    "default_speed_kph": {
+      "motorway": 100,
+      "trunk": 80,
+      "primary": 50,
+      "secondary": 50,
+      "tertiary": 40,
+      "residential": 30,
+      "unclassified": 30,
+      "living_street": 20,
+      "service": 20
+    },
+    "default_lanes": {
+      "motorway": 2.5,
+      "trunk": 2.0,
+      "primary": 1.5,
+      "secondary": 1.25,
+      "tertiary": 1.0,
+      "residential": 1.0,
+      "unclassified": 1.0,
+      "living_street": 1.0,
+      "service": 1.0
+    },
+    "capacity_per_lane_vph": 900.0,
+    "reference_demand_scale_vph_per_person": 0.08,
+    "bpr_alpha": 0.15,
+    "bpr_beta": 4.0,
+    "routing_iterations": 6,
+    "routing_damping": 0.45,
+    "route_choice_temperature": 0.08,
+    "nearest_services_per_zone": 3,
+    "candidate_paths_per_od": 4,
+    "k_shortest_weight": "travel_time",
+    "reference_consistency_tolerance": 1e-08
+  },
+  "accessibility": {
+    "impedance": "exponential",
+    "kappa_calibration": "half_life_minutes",
+    "half_life_minutes": 20.0,
+    "gamma": 0.95,
+    "signed_loss_robustness": true
+  },
+  "disruptions": {
+    "horizon_T": 5,
+    "severity_levels": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "spatial_extent_m": [
+      300.0,
+      800.0,
+      1600.0
+    ],
+    "profiles": {
+      "short": [
+        1.0,
+        0.65,
+        0.3,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "persistent": [
+        1.0,
+        0.92,
+        0.8,
+        0.65,
+        0.48,
+        0.3
+      ],
+      "recurrent": [
+        1.0,
+        0.55,
+        0.25,
+        0.7,
+        0.4,
+        0.15
+      ]
+    },
+    "n_train": 180,
+    "n_validation": 60,
+    "n_test": 100,
+    "n_structural_test": 80,
+    "structural_holdout": {
+      "type": "severity_extent_combination",
+      "severity": 1.0,
+      "extent_m": 1600.0
+    }
+  },
+  "intervention": {
+    "restoration_fraction_of_remaining_deficit": 0.6,
+    "restoration_retention": 0.9,
+    "edge_cost_scale": 1.0,
+    "edge_cost_length_power": 1.0,
+    "reference_budget_median_actions": 4.0,
+    "budget_multiplier_baseline": 1.0,
+    "budget_grid": [
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "max_candidate_edges_per_step": 40
+  },
+  "risk": {
+    "lambda_equity": 0.5,
+    "lambda_tail": 0.75,
+    "cvar_alpha": 0.9
+  },
+  "graph_policy": {
+    "method": "episodic_policy_gradient",
+    "hidden_dim": 64,
+    "message_layers": 2,
+    "learning_rate": 0.0003,
+    "weight_decay": 1e-05,
+    "epochs": 50,
+    "episodes_per_epoch": 6,
+    "entropy_coef": 0.01,
+    "gradient_clip": 2.0,
+    "validation_every": 5,
+    "early_stopping_patience": 5,
+    "capacity_weighted_message_robustness": true
+  },
+  "baselines": {
+    "random_repetitions": 20,
+    "b4_search_candidates": 250,
+    "b4_search_elite_fraction": 0.1,
+    "b4_search_rounds": 8
+  },
+  "statistics": {
+    "bootstrap_resamples": 10000,
+    "confidence_level": 0.95,
+    "holm_adjust": true,
+    "wilcoxon_robustness": true,
+    "rank_overlap_fracs": [
+      0.05,
+      0.1,
+      0.2
+    ]
+  },
+  "output": {
+    "save_parquet": true,
+    "save_csv": true,
+    "save_geojson": true,
+    "save_models": true,
+    "make_figures": true,
+    "make_tables": true
+  }
+}
