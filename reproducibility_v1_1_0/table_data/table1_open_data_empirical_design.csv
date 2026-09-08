@@ -1,0 +1,25 @@
+Block,Item,Value
+Urban system,Study area,Métropole Européenne de Lille
+Urban system,Populated Filosofi cells,9196
+Urban system,Computational model zones,1800
+Urban system,Essential-health service opportunities,40
+Urban system,Directed road edges,534308
+Routing,OD pairs,5389
+Routing,Candidate paths,21556
+Routing,Paths per OD,4
+Disruptions,Training scenarios,180
+Disruptions,Validation scenarios,60
+Disruptions,Ordinary test scenarios,100
+Disruptions,Structural holdout scenarios,80
+Disruptions,Decision horizon (T+1),6
+Intervention,Candidate rule,R3: absolute capacity deficit × fixed candidate-path incidence
+Intervention,Maximum candidates per state,160
+Intervention,Restoration fraction,0.6
+Risk,Discount factor gamma,0.95
+Risk,Equity loading lambda_E,0.5
+Risk,Tail loading lambda_R,0.75
+Risk,CVaR level alpha,0.9
+Evaluation,Numerical seeds,10
+Evaluation,Reported accessibility,Exact full network
+Evaluation,Exact trajectories,15120
+Evaluation,Exact decision steps,90720

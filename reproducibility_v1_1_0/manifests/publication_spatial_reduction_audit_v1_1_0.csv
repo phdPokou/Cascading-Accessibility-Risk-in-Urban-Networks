@@ -1,0 +1,3 @@
+population_set,n_units,n_vulnerable_units,vulnerable_unit_share,population,vulnerable_population,vulnerable_population_share,model_population_coverage_of_full
+full_populated_filosofi_grid,9196,2299,0.25,1092635.0,560812.0,0.5132656376557588,0.4669844000970132
+computational_model_sample,1800,864,0.48,510243.5,323813.0,0.6346244489150769,0.4669844000970132

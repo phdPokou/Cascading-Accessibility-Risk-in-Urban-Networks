@@ -1,0 +1,76 @@
+{
+  "script_version": "1.1.0-B",
+  "evaluation_accessibility": "exact_full_network",
+  "source_completion_manifest": "C:\\Users\\fredy\\Downloads\\CEUS_LILLE_DATA\\evaluation\\exact_evaluation_completion.json",
+  "figure_csvs": [
+    {
+      "path": "figure_data\\q1pp_v1_1_0\\fig1_network_edges.csv",
+      "sha256": "2917eee9a36cb4352f1aa9780c10b9200dbbfbb2a1500c4ed554adeeaeb1dfb0",
+      "rows": 18000
+    },
+    {
+      "path": "figure_data\\q1pp_v1_1_0\\fig1_services.csv",
+      "sha256": "1da0972b8ebae359f65ebf85fa71dee3c95e46bad73b985a04e4e083f7a8b664",
+      "rows": 40
+    },
+    {
+      "path": "figure_data\\q1pp_v1_1_0\\fig1_zones.csv",
+      "sha256": "5259ce6ebc8128729fae49e9739c42973e79ec2f824a1cf3a9a809baa0e383c9",
+      "rows": 9196
+    },
+    {
+      "path": "figure_data\\q1pp_v1_1_0\\fig2_cascade_diagnostic.csv",
+      "sha256": "42addbd803a6a07890c78f6eb81c29c2e4e215805c26428e3b225e9fdc35ce35",
+      "rows": 420
+    },
+    {
+      "path": "figure_data\\q1pp_v1_1_0\\fig3_policy_regime_forest.csv",
+      "sha256": "049cc3767ac5ac5ac7a9cb740e54abe3b6d3ee0378ae0b93d10fa30d6e02eee1",
+      "rows": 10
+    },
+    {
+      "path": "figure_data\\q1pp_v1_1_0\\fig4_scenario_value_sequential_adaptation.csv",
+      "sha256": "c8e96cf786f268c440bd7dad76f145e636ad8dbad326099a32e501f1a4447c05",
+      "rows": 180
+    },
+    {
+      "path": "figure_data\\q1pp_v1_1_0\\fig5_ablation_optimizer.csv",
+      "sha256": "bfe321706f105f423951d386ecb8531c8874aa64ab1d9dae7e5bba77ff36a7ab",
+      "rows": 6
+    }
+  ],
+  "table_csvs": [
+    {
+      "path": "table_data\\q1pp_v1_1_0\\table1_open_data_empirical_design.csv",
+      "sha256": "0d0b53b2b369a2b2868a742de0689479482af482d9184a15109712d7f7f789ca",
+      "rows": 24
+    },
+    {
+      "path": "table_data\\q1pp_v1_1_0\\table2_policy_specifications.csv",
+      "sha256": "3f263670aae50c113624a0c0b188baf7e58bf9eb82522a605c78522cc8567409",
+      "rows": 12
+    },
+    {
+      "path": "table_data\\q1pp_v1_1_0\\table3_exact_performance_by_regime.csv",
+      "sha256": "73c9c4cd13f2b68bcd0bde66e3cb1f8fa973ed4b160b1871b6a8216f5460099a",
+      "rows": 12
+    },
+    {
+      "path": "table_data\\q1pp_v1_1_0\\table4_paired_inference.csv",
+      "sha256": "049cc3767ac5ac5ac7a9cb740e54abe3b6d3ee0378ae0b93d10fa30d6e02eee1",
+      "rows": 10
+    },
+    {
+      "path": "table_data\\q1pp_v1_1_0\\table5_ablation_optimizer_robustness.csv",
+      "sha256": "bfe321706f105f423951d386ecb8531c8874aa64ab1d9dae7e5bba77ff36a7ab",
+      "rows": 6
+    }
+  ],
+  "diagnostic_csvs": [
+    {
+      "path": "manifests\\publication_spatial_reduction_audit_v1_1_0.csv",
+      "sha256": "3c177c85cef233b4e79ea9561d4df90f455883d2cb68cab086723dcd6fbdd480",
+      "rows": 2
+    }
+  ]
+}

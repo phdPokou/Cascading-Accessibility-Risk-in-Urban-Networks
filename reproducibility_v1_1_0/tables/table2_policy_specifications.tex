@@ -1,0 +1,18 @@
+\begin{tabular}{llllllll}
+\toprule
+Spec & Decision rule & Sequential updating & Graph message passing & CAR feature/use & Equity term & Tail term & Role \\
+\midrule
+B0 & Random feasible intervention & Yes & No & No & No & No & Random benchmark \\
+B1 & Directed betweenness ranking & Yes & No & No & No & No & Topology benchmark \\
+B2 & Myopic accessibility-loss rule & Yes & No & No & No & No & Candidate-path evaluator for action selection; exact final outcomes \\
+B3 & Training-only surrogate CAR ranking & Yes & No & Ranking & No & No & No test-outcome information in ranking \\
+B4 & Open-loop rank plan & Fixed rank plan & No & No & No & No & Rank mapped through state-dependent admissible R3 correspondence \\
+B5 & Graph policy; episodic policy gradient & Yes & Yes & Yes & Yes & Yes & Primary learned specification \\
+A1 & B5 without message passing & Yes & No & Yes & Yes & Yes & Controlled representation ablation \\
+A2 & B5 without CAR node feature & Yes & Yes & No & Yes & Yes & Controlled feature ablation \\
+A3 & B5 without equity loading & Yes & Yes & Yes & No & Yes & Controlled objective ablation \\
+A4 & B5 without tail-risk loading & Yes & Yes & Yes & Yes & No & Controlled objective ablation \\
+A5 & B5 with frozen sequential scores & No score updating & Yes & Yes & Yes & Yes & Controlled sequential-adaptation ablation \\
+B5-PPO & Same graph policy; PPO-style optimizer & Yes & Yes & Yes & Yes & Yes & Algorithmic robustness only \\
+\bottomrule
+\end{tabular}

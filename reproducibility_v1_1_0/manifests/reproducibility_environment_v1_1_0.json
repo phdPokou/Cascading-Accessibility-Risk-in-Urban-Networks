@@ -1,0 +1,63 @@
+{
+  "script_version": "1.1.0-B",
+  "created_utc": "2026-09-05T18:50:48.974041+00:00",
+  "checks": {
+    "seeds": {
+      "expected": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606,
+        707,
+        808,
+        909,
+        1001
+      ],
+      "actual": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606,
+        707,
+        808,
+        909,
+        1001
+      ],
+      "pass": true
+    },
+    "torch": {
+      "expected": "2.12.0+cu126",
+      "actual": "2.12.0+cu126",
+      "pass": true
+    },
+    "cuda": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "gpu": {
+      "expected": "NVIDIA GeForce RTX 3060 Laptop GPU",
+      "actual": "NVIDIA GeForce RTX 3060 Laptop GPU",
+      "pass": true
+    }
+  },
+  "python": "3.12.3 | packaged by conda-forge | (main, Apr 15 2024, 18:20:11) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.1.4",
+    "scipy": "1.13.1",
+    "networkx": "3.2.1",
+    "geopandas": "1.1.4",
+    "shapely": "2.1.2",
+    "pyproj": "3.7.2",
+    "osmnx": "2.1.1",
+    "torch": "2.12.0+cu126",
+    "matplotlib": "3.10.0"
+  },
+  "torch_cuda_version": "12.6"
+}

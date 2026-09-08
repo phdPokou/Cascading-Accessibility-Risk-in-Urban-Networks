@@ -1,0 +1,224 @@
+{
+  "script_version": "1.1.0-B",
+  "created_utc": "2026-09-05T20:10:29.320076+00:00",
+  "canonical_seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909,
+    1001
+  ],
+  "reference_environment": {
+    "torch": "2.12.0+cu126",
+    "cuda": true,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU"
+  },
+  "n_model_checkpoints": 70,
+  "files": [
+    {
+      "path": "figure_data\\fig1_network_edges.csv",
+      "bytes": 1464382,
+      "sha256": "2917eee9a36cb4352f1aa9780c10b9200dbbfbb2a1500c4ed554adeeaeb1dfb0"
+    },
+    {
+      "path": "figure_data\\fig1_services.csv",
+      "bytes": 1809,
+      "sha256": "1da0972b8ebae359f65ebf85fa71dee3c95e46bad73b985a04e4e083f7a8b664"
+    },
+    {
+      "path": "figure_data\\fig1_zones.csv",
+      "bytes": 1696888,
+      "sha256": "5259ce6ebc8128729fae49e9739c42973e79ec2f824a1cf3a9a809baa0e383c9"
+    },
+    {
+      "path": "figure_data\\fig2_cascade_diagnostic.csv",
+      "bytes": 56493,
+      "sha256": "42addbd803a6a07890c78f6eb81c29c2e4e215805c26428e3b225e9fdc35ce35"
+    },
+    {
+      "path": "figure_data\\fig3_policy_regime_forest.csv",
+      "bytes": 4325,
+      "sha256": "049cc3767ac5ac5ac7a9cb740e54abe3b6d3ee0378ae0b93d10fa30d6e02eee1"
+    },
+    {
+      "path": "figure_data\\fig4_scenario_value_sequential_adaptation.csv",
+      "bytes": 10956,
+      "sha256": "c8e96cf786f268c440bd7dad76f145e636ad8dbad326099a32e501f1a4447c05"
+    },
+    {
+      "path": "figure_data\\fig5_ablation_optimizer.csv",
+      "bytes": 2374,
+      "sha256": "bfe321706f105f423951d386ecb8531c8874aa64ab1d9dae7e5bba77ff36a7ab"
+    },
+    {
+      "path": "figures\\fig1_urban_service_access_system.pdf",
+      "bytes": 878599,
+      "sha256": "892c74e900b93d82dec48f62ba51ac9e97f6938bff6a7ee9a547bf192d918266"
+    },
+    {
+      "path": "figures\\fig1_urban_service_access_system.png",
+      "bytes": 3623899,
+      "sha256": "119216d164a5a6bb9d28ce9ce20eebf3a3f0ffbbe7eecdb5968f66bdd119e6a3"
+    },
+    {
+      "path": "figures\\fig2_signed_flow_response_diagnostic.pdf",
+      "bytes": 28842,
+      "sha256": "26872d79592a472a3ed4a046c0bc60552412b6f0dca194a48f948189fd7bc086"
+    },
+    {
+      "path": "figures\\fig2_signed_flow_response_diagnostic.png",
+      "bytes": 710405,
+      "sha256": "78e6a76c31e6c0993c722f6c15b49f02f590543e7b120b708a4306d80417fe6c"
+    },
+    {
+      "path": "figures\\fig3_policy_performance_by_regime.pdf",
+      "bytes": 21463,
+      "sha256": "508aff705895018e8f348703a8999da3c69a6e763e96924ffc699d9004cfe0fc"
+    },
+    {
+      "path": "figures\\fig3_policy_performance_by_regime.png",
+      "bytes": 260877,
+      "sha256": "9fb48a365eba297603a6d24ae820099f34728eb2ef915f26b2aff0fa3fc0e8ea"
+    },
+    {
+      "path": "figures\\fig4_scenario_level_sequential_value.pdf",
+      "bytes": 18461,
+      "sha256": "43bc403cc26da9d4a364bb2a377aef08193bc014615972b321899214e12f6745"
+    },
+    {
+      "path": "figures\\fig4_scenario_level_sequential_value.png",
+      "bytes": 251849,
+      "sha256": "23a9004f613ce0f2e5b08865898e66fca2a6263c48d86375c27ffe8ef69d6635"
+    },
+    {
+      "path": "figures\\fig5_ablation_optimizer_robustness.pdf",
+      "bytes": 21481,
+      "sha256": "ba875700ed9a2abb5cc405565314688c9e93aadeb89e257e6612942443c0f6e8"
+    },
+    {
+      "path": "figures\\fig5_ablation_optimizer_robustness.png",
+      "bytes": 309147,
+      "sha256": "4d480d8a842962d27430ae1d06a5551ac187cbe9a42f03adfa7373938a1189dc"
+    },
+    {
+      "path": "logs\\pipeline.log",
+      "bytes": 1136455,
+      "sha256": "7c78c306b08ba15e178b1492a5bc2835037783b6c17060544b29c176d1683f80"
+    },
+    {
+      "path": "manifests\\evaluation_model_inventory.csv",
+      "bytes": 5938,
+      "sha256": "9572fa389389313d90fd2be9973d2ad9d39b8de24e58ac2bf2f79b16c042ad40"
+    },
+    {
+      "path": "manifests\\exact_evaluation_completion.json",
+      "bytes": 2580,
+      "sha256": "4b792e35ce263a914bb1ae8bada517aa6b26e719f0a3646e9e22027d8dcd7333"
+    },
+    {
+      "path": "manifests\\publication_assets_v1_1_0.json",
+      "bytes": 2797,
+      "sha256": "a495189994c4bc33b1817996376686a01c173f276b1c4cd38b06feabaa09f23e"
+    },
+    {
+      "path": "manifests\\publication_spatial_reduction_audit_v1_1_0.csv",
+      "bytes": 360,
+      "sha256": "3c177c85cef233b4e79ea9561d4df90f455883d2cb68cab086723dcd6fbdd480"
+    },
+    {
+      "path": "manifests\\reproducibility_environment_v1_1_0.json",
+      "bytes": 1314,
+      "sha256": "e2babb43c52456e6c5ae7da1fa53ebc693ac7195f9cedf3aee00d6cb4e6a2c4a"
+    },
+    {
+      "path": "model_checkpoint_checksums.csv",
+      "bytes": 6977,
+      "sha256": "5f2609a030b8f4cf96faf8aa6eb982a14ebac9d601add1405d131c7be579e7bc"
+    },
+    {
+      "path": "run_state.json",
+      "bytes": 290,
+      "sha256": "881db5d3a203179660c007cac40456fe06ffae95887137a08d9e5b7594ad7289"
+    },
+    {
+      "path": "table_data\\table1_open_data_empirical_design.csv",
+      "bytes": 1003,
+      "sha256": "0d0b53b2b369a2b2868a742de0689479482af482d9184a15109712d7f7f789ca"
+    },
+    {
+      "path": "table_data\\table2_policy_specifications.csv",
+      "bytes": 1201,
+      "sha256": "3f263670aae50c113624a0c0b188baf7e58bf9eb82522a605c78522cc8567409"
+    },
+    {
+      "path": "table_data\\table3_exact_performance_by_regime.csv",
+      "bytes": 1448,
+      "sha256": "73c9c4cd13f2b68bcd0bde66e3cb1f8fa973ed4b160b1871b6a8216f5460099a"
+    },
+    {
+      "path": "table_data\\table4_paired_inference.csv",
+      "bytes": 4325,
+      "sha256": "049cc3767ac5ac5ac7a9cb740e54abe3b6d3ee0378ae0b93d10fa30d6e02eee1"
+    },
+    {
+      "path": "table_data\\table5_ablation_optimizer_robustness.csv",
+      "bytes": 2374,
+      "sha256": "bfe321706f105f423951d386ecb8531c8874aa64ab1d9dae7e5bba77ff36a7ab"
+    },
+    {
+      "path": "tables\\table1_open_data_empirical_design.csv",
+      "bytes": 1003,
+      "sha256": "0d0b53b2b369a2b2868a742de0689479482af482d9184a15109712d7f7f789ca"
+    },
+    {
+      "path": "tables\\table1_open_data_empirical_design.tex",
+      "bytes": 1250,
+      "sha256": "8136c3118770d7dd61ae4347b452502813182aa4f95cc482d127fddaec75356c"
+    },
+    {
+      "path": "tables\\table2_policy_specifications.csv",
+      "bytes": 1201,
+      "sha256": "3f263670aae50c113624a0c0b188baf7e58bf9eb82522a605c78522cc8567409"
+    },
+    {
+      "path": "tables\\table2_policy_specifications.tex",
+      "bytes": 1497,
+      "sha256": "0f82d6f61a7582e543994f3783ab7708b3c1e3b30bd1eebac7c89d8e8ea96098"
+    },
+    {
+      "path": "tables\\table3_exact_performance_by_regime.csv",
+      "bytes": 1448,
+      "sha256": "73c9c4cd13f2b68bcd0bde66e3cb1f8fa973ed4b160b1871b6a8216f5460099a"
+    },
+    {
+      "path": "tables\\table3_exact_performance_by_regime.tex",
+      "bytes": 1263,
+      "sha256": "3f7ae2ec63035fe61cb0b55993f98c44e0cf9f4859cafe45363611ac5b34fc6b"
+    },
+    {
+      "path": "tables\\table4_paired_inference.csv",
+      "bytes": 4325,
+      "sha256": "049cc3767ac5ac5ac7a9cb740e54abe3b6d3ee0378ae0b93d10fa30d6e02eee1"
+    },
+    {
+      "path": "tables\\table4_paired_inference.tex",
+      "bytes": 3303,
+      "sha256": "7af624163fa8e90b34e45005c00f6c8ba23435d7dd111ed3a737709d23a3009e"
+    },
+    {
+      "path": "tables\\table5_ablation_optimizer_robustness.csv",
+      "bytes": 2374,
+      "sha256": "bfe321706f105f423951d386ecb8531c8874aa64ab1d9dae7e5bba77ff36a7ab"
+    },
+    {
+      "path": "tables\\table5_ablation_optimizer_robustness.tex",
+      "bytes": 2091,
+      "sha256": "d110f6961af5e17c5fd2dc745ccb51b2002fc250d34b66e92f7744cee3e77de9"
+    }
+  ]
+}
