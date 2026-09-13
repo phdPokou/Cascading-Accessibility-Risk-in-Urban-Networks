@@ -1,5 +1,5 @@
-# Cascading Accessibility Risk in Urban Networks
-## Graph Policy Learning for Resilient Public-Service Planning
+# Cascading Accessibility Risk in Urban Transportation Networks
+## Data-Driven Graph Policy Learning for Resilient Public-Service Restoration
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white" alt="Python">
@@ -14,7 +14,7 @@
 
 This repository contains the public reproducibility pipeline for the paper:
 
-> **Cascading Accessibility Risk in Urban Networks: Graph Policy Learning for Resilient Public-Service Planning**
+> **Cascading Accessibility Risk in Urban Transportation Networks: Data-Driven Graph Policy Learning for Resilient Public-Service Restoration**
 
 The code implements the empirical workflow linking potential accessibility,
 disruption trajectories, sequential public restoration, and graph based policy
