@@ -14,7 +14,7 @@
 
 This repository contains the public reproducibility pipeline for the paper:
 
-> **Graph Policy Learning for Mitigating Cascading Accessibility Risks in Urban Transport Restoration**
+> **Cascading Accessibility Risk in Urban Transportation Networks: Data-Driven Graph Policy Learning for Resilient Public-Service Restoration**
 
 The code implements the empirical workflow linking potential accessibility,
 disruption trajectories, sequential public restoration, and graph based policy
